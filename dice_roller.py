@@ -1,5 +1,14 @@
-def main():
-  print('You rolled a die')
+import random as rnd
 
+def main():
+  dice_rolls = 2
+  dice_sum = 0
+  for i in range(0,dice_rolls):
+    roll = rnd.randint(1,6)
+    dice_sum += roll
+    print(f'You rolled a {roll}')
+
+  print(f'The sum of the dice is {dice_sum}')
+  
 if __name__== "__main__":
   main()
